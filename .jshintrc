@@ -1,0 +1,10 @@
+{
+  "esversion": 11,
+  "asi": true,
+  "undef": true,
+  "unused": true,
+  "eqeqeq": true,
+  "curly": true,
+  "node": true,
+  "browser": true
+}
