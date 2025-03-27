@@ -1,8 +1,9 @@
 export const COLOR = {
-    primary: "#F0564C",
+    primary: "#6240E6",
     secondary: "#80312A",
     background: "#1B1B1F",
-    subBackground: "#202127",
+    surface: "#202127",
     idleButton: "#32363F",
-    foreground: "#DFDFD6",
+    foreground: "#F3F5F7",
 }
+
