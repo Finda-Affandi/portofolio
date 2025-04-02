@@ -1,4 +1,4 @@
-import {COLOR} from "../constants/UIConfig.jsx";
+import {COLOR} from "../constants/UIConfig";
 
 export const Background = () => {
     return (

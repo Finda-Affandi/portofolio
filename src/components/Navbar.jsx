@@ -1,5 +1,5 @@
 import logo from "../assets/io.png"
-import {Button} from "./Button.jsx";
+import {Button} from "./Button";
 
 export const Navbar = () => {
     return (
