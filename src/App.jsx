@@ -15,8 +15,9 @@ const App = () => {
               "--foreground-color": COLOR.foreground,
           }}
           className="overflow-x-hidden text-[var(--foreground-color)] antialiased selection:bg-[var(--secondary-color)] selection:text-[var(--foreground-color)]">
-          <div className="flixed top-0 -z-10 h-full w-full"></div>
-          <Background/>
+          <div className="fixed top-0 -z-10 h-full w-full pointer-events-auto">
+              <Background/>
+          </div>
           <Container/>
       </div>
   )

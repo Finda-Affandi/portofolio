@@ -8,7 +8,7 @@ export const Navbar = () => {
                 <img src={logo} alt="Logo" className="w-20 h-auto" />
             </div>
             <div className="m-8 flex items-center justify-center gap-4">
-                <Button text="Reach Out"/>
+                <Button content="Reach Out"/>
             </div>
         </nav>
     )

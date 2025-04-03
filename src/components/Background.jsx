@@ -1,21 +1,19 @@
 import {COLOR} from "../constants/UIConfig";
+import Squares from "./effect/BackgroundEffect.jsx";
 
 export const Background = () => {
     return (
-        <div
-            style={{
-                background: COLOR.background,
-                backgroundImage: `linear-gradient(to right, ${COLOR.idleButton} 1px, transparent 1px),
-                      linear-gradient(to bottom, ${COLOR.idleButton} 1px, transparent 1px)`,
-                backgroundSize: "6rem 4rem"
-            }}
-            className="absolute inset-0 -z-10 h-full w-full">
-            <div
-                style={{
-                    backgroundImage: `radial-gradient(circle 800px at 100% 200px, ${COLOR.background} 1%, transparent)`,
-                }}
-                className="absolute bottom-0 left-0 right-0 top-0">
-            </div>
+        <div className="relative h-screen w-full">
+            {/* Squares Background */}
+            <Squares
+                speed={0.5}
+                squareSize={40}
+                direction="up"  // Set your preferred direction
+                borderColor={COLOR.idleButton}  // Use your primary color or define in UIConfig
+                hoverFillColor={COLOR.secondary}  // Use your foreground color or define in UIConfig
+            />
+            {/* Any additional content you want to overlay */}
+
         </div>
     )
 }
