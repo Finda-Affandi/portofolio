@@ -5,5 +5,6 @@ export const COLOR = {
     surface: "#202127",
     idleButton: "#32363F",
     foreground: "#F3F5F7",
+    secondaryForeground: "rgba(243,245,247,0.7)",
 }
 

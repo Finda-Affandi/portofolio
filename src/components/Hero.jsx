@@ -4,14 +4,15 @@ import {useRef, useState} from "react";
 import GradientText from "./text-effect/GradientText.jsx";
 import {COLOR} from "../constants/UIConfig.jsx";
 import DecryptedText from "./text-effect/DecryptedText.jsx";
+import {CustomImage} from "./CustomImage.jsx";
 
 export const Hero = () => {
     const containerRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35 mt-40">
-            <div className="flex flew-wrap">
-                <div className="w-full lg:w-3/4">
+        <div className="w-full h-[80vh] border-b border-neutral-900 pb-4">
+            <div className="mt-15 flex flex-wrap">
+                <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex flex-col items-center lg:items-start">
                         <div
                             ref={containerRef}
@@ -29,7 +30,7 @@ export const Hero = () => {
                                 falloff='gaussian'
                                 style={{
                                     fontFamily: '"Pixelify Sans", sans-serif',
-                                    fontSize: '5rem',
+                                    fontSize: '500%',
                                     lineHeight: '80%',
                                     color: isHovered ? 'var(--primary-color)' : 'var(--foreground-color)',
                                     cursor: 'pointer',
@@ -49,15 +50,16 @@ export const Hero = () => {
                               <b>{PROFESSION}</b>
                             </GradientText>
                         </span>
-                        {/*<p className="max-w-xxl">{HERO_CONTENT}</p>*/}
-                        <DecryptedText
-                            text={HERO_CONTENT}
-                        />
+                        <div className="my-2">
+                            <DecryptedText
+                                text={HERO_CONTENT}
+                            />
+                        </div>
                     </div>
                 </div>
-                <div className="w-full lg:w1/4 lg:p-8">
-                    <div className="flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1610209455607-89e8b3e0e393?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Finda Affandi" className="w-120 h-auto -my-30"/>
+                <div className="w-full lg:w-1/2">
+                    <div className="my-2 flex items-center justify-center">
+                        <CustomImage imageSource="https://images.unsplash.com/photo-1610209455607-89e8b3e0e393?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                     </div>
                 </div>
             </div>

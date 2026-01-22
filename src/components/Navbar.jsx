@@ -7,8 +7,15 @@ export const Navbar = () => {
             <div className="flex flex-shrink-0 items-center">
                 <img src={logo} alt="Logo" className="w-20 h-auto" />
             </div>
-            <div className="m-8 flex items-center justify-center gap-4">
-                <Button content="Reach Out"/>
+            <div
+                className="m-8 flex items-center justify-center gap-4"
+                style={{
+                    marginRight: '0px',
+                }}
+            >
+                <Button
+                    content="Reach Out"
+                />
             </div>
         </nav>
     )

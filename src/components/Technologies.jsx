@@ -12,11 +12,14 @@ import {
 } from "devicons-react";
 import RotatingText from "./text-effect/RotatingText.jsx";
 import Squares from "./effect/BackgroundEffect.jsx";
+import {ShadowText} from "./text-effect/Shadow.jsx";
 
 export const Technologies = () => {
     return (
         <div className="border-b border-neutral-900 pb-24">
-            <h1 className="my-20 text-center text-4xl">Tech Stack</h1>
+            <h1 className="my-20 text-center text-4xl">
+                <ShadowText content="Tech Stack"/>
+            </h1>
             <div className="flex flex-wrap items-center justify-center gap-4">
                 <IconTransButton
                     idle={<PythonPlain color="var(--primary-color)" size="30px" />}

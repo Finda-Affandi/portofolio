@@ -13,6 +13,7 @@ const App = () => {
               "--surface-color": COLOR.surface,
               "--idleButton-color": COLOR.idleButton,
               "--foreground-color": COLOR.foreground,
+              "--secondaryForeground-color": COLOR.secondaryForeground,
           }}
           className="overflow-x-hidden text-[var(--foreground-color)] antialiased selection:bg-[var(--secondary-color)] selection:text-[var(--foreground-color)]">
           <div className="fixed top-0 -z-10 h-full w-full pointer-events-auto">
