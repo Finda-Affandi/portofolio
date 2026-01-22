@@ -3,16 +3,11 @@ import {Button} from "./Button";
 
 export const Navbar = () => {
     return (
-        <nav className="mb-20 flex items-center justify-between py-6">
+        <nav className="flex items-center justify-between py-4">
             <div className="flex flex-shrink-0 items-center">
-                <img src={logo} alt="Logo" className="w-20 h-auto" />
+                <img src={logo} alt="Logo" className="w-16 h-auto sm:w-20" />
             </div>
-            <div
-                className="m-8 flex items-center justify-center gap-4"
-                style={{
-                    marginRight: '0px',
-                }}
-            >
+            <div className="flex items-center justify-center">
                 <Button
                     content="Reach Out"
                 />
